@@ -737,7 +737,6 @@ p {
   display: flex;
   align-items: end;
   padding: 0;
-  outline: 1px solid red;
 }
 
 .form-fild-footer {
@@ -780,6 +779,13 @@ p {
 
 .heroes-button.subscribe {
   min-width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.icon-submit {
+  margin-left: 10px;
+  fill: #FFFFFF;
 }
 
 /*------------------------------------------- Project */
