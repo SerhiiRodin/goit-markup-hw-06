@@ -284,9 +284,15 @@ p {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ------Modal------------ */
+.modal-button:hover {
+  fill: #2196f3;
+}
+
+/* ------Modal Form------------ */
 .form {
   outline: 1px solid red;
   margin: 0 auto;
@@ -322,15 +328,37 @@ p {
   color: #757575;
 }
 
+.input-wraper {
+  position: relative;
+}
+
 .form-fild-input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px;
   height: 40px;
+  width: 100%;
+  padding-left: 42px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-fild-input:hover {
-  border-color: #2196f3;
+.form-fild:focus-within .form-fild-input {
+  border-color: rgba(33, 150, 243, 1);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: 12px;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-fild:focus-within .modal-form-icon {
+  fill: rgba(33, 150, 243, 1);
 }
 
 .comment {
@@ -346,10 +374,12 @@ p {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-fild-comment:hover {
-  border-color: #2196f3;
+.comment:focus-within .form-fild-comment {
+  border-color: rgba(33, 150, 243, 1);
 }
 
 .form-fild-comment::placeholder {

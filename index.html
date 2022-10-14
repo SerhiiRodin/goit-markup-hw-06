@@ -63,37 +63,52 @@
             </button>
             <form class="form">
               <h2 class="modal-titel">Залиште свої дані, ми вам передзвонимо</h2>
-              <div class="form-fild">
-                <label for="username" class="form-fild-label">Ім'я</label>
-                <input class="form-fild-input" type="username" name="username" id="username" placeholder="">
-              </div>
 
-              <div class="form-fild">
-                <label for="tel" class="form-fild-label">Телефон</label>
-                <input class="form-fild-input" type="tel" name="tel" id="tel">
-              </div>
+              <label class="form-fild">
+                <span class="form-fild-label">Ім'я</span>
+                <div class="input-wraper">
+                  <input class="form-fild-input" type="username" name="username" placeholder=" " />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-name"></use>
+                  </svg>
+                </div>
+              </label>
 
-              <div class="form-fild">
-                <label for="email" class="form-fild-label">Пошта</label>
-                <input class="form-fild-input" type="email" name="email" id="email">
-              </div>
+              <label class="form-fild">
+                <span class="form-fild-label">Телефон</span>
+                <div class="input-wraper">
+                  <input class="form-fild-input" type="tel" name="tel" placeholder=" " />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </label>
 
-              <div class="form-fild comment">
-                <label for="comment" class="form-fild-label">Коментар</label>
-                <textarea name="comment" id="comment" class="form-fild-comment" placeholder="Введіть текст"></textarea>
-              </div>
+              <label class="form-fild">
+                <span class="form-fild-label">Пошта</span>
+                <div class="input-wraper">
+                  <input class="form-fild-input" type="email" name="email" placeholder=" " />
+                  <svg class="modal-form-icon" width="18" height="18">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </label>
 
-              <div class="form-fild policy">
-                <input type="checkbox" name="policy" value="policy" id="policy">
-                <label for="policy" class="form-fild-label label-polici">Погоджуюся з розсилкою та приймаю <span><a
-                      href="" class="link">Умови договору</a></span></label>
-              </div>
+              <label class="form-fild comment">
+                <span class="form-fild-label">Коментар</span>
+                <textarea name="comment" class="form-fild-comment" placeholder="Введіть текст"></textarea>
+              </label>
+
+              <label class="form-fild policy">
+                <input type="checkbox" name="policy" value="policy" />
+                <span class="form-fild-label label-polici">
+                  Погоджуюся з розсилкою та приймаю
+                  <span><a href="" class="link">Умови договору</a></span>
+                </span>
+              </label>
 
               <button type="submit" class="heroes-button send">Відправити</button>
-
-
             </form>
-
           </div>
         </div>
       </div>
@@ -391,25 +406,25 @@
             </li>
           </ul>
         </div>
-        
-          <form class="form-footer">
-            <div class="form-fild-footer">
-              <p class="form-fild-footer-text">Підпишіться на розсилку</p>
-              <label class="form-fild-footer-label">
-                <input class="form-fild-footer-input" type="email" name="email" placeholder=" ">
-                <span class="form-label">E-mail</span>
-              </label>
-            </div>
 
-            <div class="submit-wraper">
-              <button type="submit" class="heroes-button subscribe">Підписатися
-                <svg class="icon-submit" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>      
+        <form class="form-footer">
+          <div class="form-fild-footer">
+            <p class="form-fild-footer-text">Підпишіться на розсилку</p>
+            <label class="form-fild-footer-label">
+              <input class="form-fild-footer-input" type="email" name="email" placeholder=" " />
+              <span class="form-label">E-mail</span>
+            </label>
+          </div>
 
+          <div class="submit-wraper">
+            <button type="submit" class="heroes-button subscribe">
+              Підписатися
+              <svg class="icon-submit" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </footer>
