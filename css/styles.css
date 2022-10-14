@@ -732,21 +732,22 @@ p {
   background-color: var(--color-blue);
 }
 
-/* ------------------------- */
+/* --------FORMA----------------- */
 .form-footer {
   display: flex;
-  align-items: end;
+  align-items: center;
   padding: 0;
+  margin-left: 93px;
 }
 
 .form-fild-footer {
   display: flex;
   flex-direction: column;
-  margin-left: 93px;
   margin-right: 12px;
+  padding: 0;
 }
 
-.form-fild-footer-label {
+.form-fild-footer-text {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -757,13 +758,37 @@ p {
   color: #ffffff;
 }
 
-.form-fild-footer-input {
-  height: 50px;
+.form-fild-footer-label {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-fild-footer-label:focus-within .form-label {
+  opacity: 0;
+}
+
+.form-fild-footer-input:not(:placeholder-shown) + .form-label {
+  opacity: 0;
 }
 
 .form-fild-footer-input {
   width: 358px;
   height: 50px;
+  padding-left: 16px;
   background-color: var(--color-background-heroes);
 
   font-weight: 400;
@@ -785,7 +810,7 @@ p {
 
 .icon-submit {
   margin-left: 10px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /*------------------------------------------- Project */
