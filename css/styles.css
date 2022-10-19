@@ -345,6 +345,7 @@ p {
 
 .form-fild:focus-within .form-fild-input {
   border-color: rgba(33, 150, 243, 1);
+  outline: transparent;
 }
 
 .modal-form-icon {
@@ -380,6 +381,7 @@ p {
 
 .comment:focus-within .form-fild-comment {
   border-color: rgba(33, 150, 243, 1);
+  outline: transparent;
 }
 
 .form-fild-comment::placeholder {
@@ -395,6 +397,7 @@ p {
   flex-direction: row;
   align-items: center;
   margin-bottom: 30px;
+  margin-left: 12px;
 }
 
 .label-polici {
@@ -414,7 +417,14 @@ p {
   color: #2196f3;
 }
 
-.policy [type='checkbox'] {
+.policy-icon {
+  border: 2px solid #212121;
+  border-radius: 2px;
+}1q w
+
+.policy-checkbox:checked + .policy-icon {
+  background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .send {
